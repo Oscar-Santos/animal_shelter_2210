@@ -22,4 +22,10 @@ class Shelter
             patron.insert(-1,"!")
         end
     end
+
+    def over_capacity?
+        @capacity < @patrons.size
+    end
+
+
 end
