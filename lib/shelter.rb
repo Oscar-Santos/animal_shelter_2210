@@ -1,4 +1,3 @@
-# require 'pry'
 
 class Shelter
     attr_reader :name,
@@ -25,6 +24,11 @@ class Shelter
 
     def over_capacity?
         @capacity < @patrons.size
+    end
+
+    def adopt
+        extra_capacity = capacity - 1
+       @patrons = @patrons[0..extra_capacity] 
     end
 
 
