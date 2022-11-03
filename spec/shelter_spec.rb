@@ -7,13 +7,14 @@ RSpec.describe Shelter do
         expect(shelter).to be_a(Shelter)
     end
 
-    it 'has attributes' do
-        shelter = Shelter.new("Denver Animal Shelter", 3)
+    # it 'can call pets' do
+    #     shelter = Shelter.new("Denver Animal Shelter", 3)
 
-        expect(shelter.name).to eq("Denver Animal Shelter")
-        expect(shelter.capacity).to eq(3)
-        expect(shelter.pets).to eq([])
-    end
+    #     shelter.add_pet('Salem')
+    #     shelter.add_pet('Beethoven')
+    #     shelter.add_pet('Spot')
+
+    #     expect(shelter.call_pets).to eq(["Salem!", "Beethoven!", "Spot!"])
+    # end
 end
 
- 
